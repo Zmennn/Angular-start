@@ -4,13 +4,15 @@ import { CardComponent } from './card/card.component';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { InteractiveComponent } from './interactive/interactive.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     FormComponent,
-    InteractiveComponent
+    InteractiveComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule

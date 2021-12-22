@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="title">Передача события</h2>
+  <p class="text">{{ text }}</p>
+  <input
+    class="input"
+    type="text"
+    [value]="text"
+    (input)="inputHandler($event)"
+  />
+  <button class="button" type="button" (click)="buttonHandler()">
+    Очистить
+  </button>
+  <h2 class="title">Реализация через ссылку на элемент</h2>
+  <p class="text">{{ text2 }}</p>
+  <input class="input" type="text" #inp (input)="inputHandler2(inp.value)" />
+</div>
