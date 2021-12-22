@@ -16,15 +16,17 @@ export class InputComponent implements OnInit {
   inputHandler(ev:any) {
   this.text=ev.target.value
   };
-
-  buttonHandler() {
-    
+  buttonHandler() {   
     this.text = ""
   }
-  ngOnInit(): void {
-  }
-
+  
   inputHandler2(data:string) {
   this.text2=data
   };
+  buttonHandler2() {
+    this.text2=""
+  }
+
+  ngOnInit(): void {
+  }
 }

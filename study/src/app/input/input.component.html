@@ -12,5 +12,14 @@
   </button>
   <h2 class="title">Реализация через ссылку на элемент</h2>
   <p class="text">{{ text2 }}</p>
-  <input class="input" type="text" #inp (input)="inputHandler2(inp.value)" />
+  <input
+    class="input"
+    type="text"
+    #inp
+    [value]="text2"
+    (input)="inputHandler2(inp.value)"
+  />
+  <button class="button" type="button" (click)="buttonHandler2()">
+    Очистить
+  </button>
 </div>
