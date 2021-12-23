@@ -9,14 +9,13 @@ export class StayleToggleComponent implements OnInit {
 
   constructor() { }
   colorStale = '';
-  result = '';
+  
 
   handler(tit: any, color: string) {
-    
-    this.result=tit.classList.value;
-    this.colorStale = color;
-    console.log(this.result);
-}
+       
+    this.colorStale = color;   
+  }
+  
   ngOnInit(): void {
   }
 
