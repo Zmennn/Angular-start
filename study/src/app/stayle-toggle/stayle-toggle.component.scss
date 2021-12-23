@@ -1,0 +1,19 @@
+.container {
+  background-color: rgb(214, 214, 214);
+}
+.title {
+  &.red {
+    color: red;
+  }
+  &.green {
+    color: green;
+  }
+  &.blue {
+    color: blue;
+  }
+}
+.text-cont {
+  width: 100%;
+  min-height: 25px;
+  outline: gray 1px solid;
+}

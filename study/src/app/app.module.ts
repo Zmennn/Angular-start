@@ -8,6 +8,7 @@ import { FormComponent } from './form/form.component';
 import { InteractiveComponent } from './interactive/interactive.component';
 import { InputComponent } from './input/input.component';
 import { FormsModuleComponent } from './forms-module/forms-module.component';
+import { StayleToggleComponent } from './stayle-toggle/stayle-toggle.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModuleComponent } from './forms-module/forms-module.component';
     FormComponent,
     InteractiveComponent,
     InputComponent,
-    FormsModuleComponent
+    FormsModuleComponent,
+    StayleToggleComponent
   ],
   imports: [
     BrowserModule,
