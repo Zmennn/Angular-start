@@ -1,8 +1,16 @@
 <div class="container">
-  <h2 #tit class="title" [ngClass]="colorStale">
+  <h2
+    #tit
+    class="title"
+    [ngClass]="{
+      red: colorStale === 'red',
+      blue: colorStale === 'blue',
+      green: colorStale === 'green'
+    }"
+  >
     Динамическое присвоение классов
   </h2>
-  <p>Классы до изменения</p>
+  <p>Классы на преведущем цикле</p>
   <p class="text-cont">{{ result }}</p>
   <button type="button" class="button" (click)="handler(tit, 'red')">
     red

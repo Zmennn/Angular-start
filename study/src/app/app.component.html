@@ -1,9 +1,15 @@
 <div class="title-container">
   <h1>Мой первый ангуляр</h1>
 </div>
-<app-card></app-card>
-<app-form></app-form>
-<app-interactive></app-interactive>
-<app-input></app-input>
-<app-forms-module></app-forms-module>
-<app-stayle-toggle></app-stayle-toggle>
+<app-card *ngIf="visibilityData !== 1"></app-card>
+<app-form *ngIf="visibilityData !== 2"></app-form>
+<app-interactive *ngIf="visibilityData !== 1"></app-interactive>
+<app-input *ngIf="visibilityData !== 2"></app-input>
+<app-forms-module *ngIf="visibilityData !== 1"></app-forms-module>
+<app-stayle-toggle *ngIf="visibilityData !== 2"></app-stayle-toggle>
+
+<div class="button-container">
+  <button class="button" (click)="onClickHidden(1)">Убрать нечетные</button>
+  <button class="button" (click)="onClickHidden(2)">Убрать четные</button>
+  <button class="button" (click)="onClickHidden(0)">Показать все</button>
+</div>

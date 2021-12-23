@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  visibilityData=0
   title = 'study';
+  onClickHidden(num:number) {
+    this.visibilityData=num
+  }
 }
