@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Передача данных к ребенку, декоратор @Input</h2>
+  <button (click)="showGallery()" class="button">Галерейка</button>
+</div>
+<div *ngIf="visibly" class="gallery-container">
+  <app-gallery-item
+    *ngFor="let element of cards"
+    [card]="element"
+  ></app-gallery-item>
+</div>

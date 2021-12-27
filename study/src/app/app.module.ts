@@ -9,6 +9,8 @@ import { InteractiveComponent } from './interactive/interactive.component';
 import { InputComponent } from './input/input.component';
 import { FormsModuleComponent } from './forms-module/forms-module.component';
 import { StayleToggleComponent } from './stayle-toggle/stayle-toggle.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryItemComponent } from './gallery-item/gallery-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { StayleToggleComponent } from './stayle-toggle/stayle-toggle.component';
     InteractiveComponent,
     InputComponent,
     FormsModuleComponent,
-    StayleToggleComponent
+    StayleToggleComponent,
+    GalleryComponent,
+    GalleryItemComponent
   ],
   imports: [
     BrowserModule,

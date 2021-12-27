@@ -1,0 +1,21 @@
+import { Card } from './../gallery/gallery.component';
+import { Component, Input, OnInit } from '@angular/core';
+
+
+@Component({
+  selector: 'app-gallery-item',
+  templateUrl: './gallery-item.component.html',
+  styleUrls: ['./gallery-item.component.scss' ]
+})
+
+export class GalleryItemComponent implements OnInit {
+  
+  @Input() card:any; 
+
+  
+
+  
+  ngOnInit(): void {
+  }
+
+}

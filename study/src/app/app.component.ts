@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,4 +12,6 @@ export class AppComponent {
   onClickHidden(num:number) {
     this.visibilityData=num
   }
+
+  
 }
