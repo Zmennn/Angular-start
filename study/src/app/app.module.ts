@@ -11,6 +11,10 @@ import { FormsModuleComponent } from './forms-module/forms-module.component';
 import { StayleToggleComponent } from './stayle-toggle/stayle-toggle.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryItemComponent } from './gallery-item/gallery-item.component';
+import { SpinerComponent } from './spiner/spiner.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { GalleryItemComponent } from './gallery-item/gallery-item.component';
     FormsModuleComponent,
     StayleToggleComponent,
     GalleryComponent,
-    GalleryItemComponent
+    GalleryItemComponent,
+    SpinerComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
