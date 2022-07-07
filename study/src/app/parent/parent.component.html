@@ -1,1 +1,7 @@
-<p>parent works!</p>
+<div class="container">
+  <h1>Двустороній зв'язок компонентів</h1>
+  <div>Вивід числа в батьківському компоненті {{ age }}</div>
+  <button class="button" (click)="increment()">відняти 1</button>
+  <app-child [(counter)]="age"> </app-child>
+  <app-second-child [transmitData]="age"></app-second-child>
+</div>

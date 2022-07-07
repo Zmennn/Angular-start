@@ -15,6 +15,8 @@ import { SpinerComponent } from './spiner/spiner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { SecondChildComponent } from './second-child/second-child.component';
+
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import { ChildComponent } from './child/child.component';
     GalleryItemComponent,
     SpinerComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    SecondChildComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
