@@ -9,6 +9,9 @@
 <app-stayle-toggle *ngIf="visibilityData !== 2"></app-stayle-toggle>
 <app-gallery *ngIf="visibilityData !== 1"></app-gallery>
 <app-parent *ngIf="visibilityData !== 2"></app-parent>
+<app-host-main *ngIf="visibilityData !== 1"></app-host-main>
+<app-empty *ngIf="visibilityData !== 2"></app-empty>
+<app-life-cycle1-parent *ngIf="visibilityData !== 1"></app-life-cycle1-parent>
 
 <div class="button-container">
   <button class="button" (click)="onClickHidden(1)">Убрать нечетные</button>

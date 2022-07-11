@@ -16,6 +16,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SecondChildComponent } from './second-child/second-child.component';
+import { HostMainComponent } from './host-main/host-main.component';
+import { HostChildComponent } from './host-child/host-child.component';
+import { EmptyComponent } from './empty/empty.component';
+import { LifeCycle1ParentComponent } from './life-cycle1-parent/life-cycle1-parent.component';
+import { LifeCycle1ChildComponent } from './life-cycle1-child/life-cycle1-child.component';
 
 
 @NgModule({
@@ -32,7 +37,12 @@ import { SecondChildComponent } from './second-child/second-child.component';
     SpinerComponent,
     ParentComponent,
     ChildComponent,
-    SecondChildComponent
+    SecondChildComponent,
+    HostMainComponent,
+    HostChildComponent,
+    EmptyComponent,
+    LifeCycle1ParentComponent,
+    LifeCycle1ChildComponent
   ],
   imports: [
     BrowserModule,

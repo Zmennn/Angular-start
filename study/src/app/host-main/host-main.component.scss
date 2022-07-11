@@ -1,0 +1,12 @@
+.container{
+    height:  450px;
+}
+
+.button-container{
+    display: inline-block;
+}
+
+.all-buttons {
+    display: flex;
+    justify-content: space-between;
+}

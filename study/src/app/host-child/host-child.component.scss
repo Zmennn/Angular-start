@@ -1,0 +1,14 @@
+:host-context(.hidden){
+    display: none;
+}
+
+:host{
+    position: relative;
+}
+.box{
+    position: absolute;
+    background-color: chartreuse;
+    padding: 5px 0 5px 0;
+    border: 4px, solid, blue ;
+    
+}

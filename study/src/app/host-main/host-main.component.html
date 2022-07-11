@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>
+    Це головний компонент в якому відкривається компонент-меню з застосуванням
+    @HostBinding
+  </h2>
+  <div class="all-buttons">
+    <div class="button-container">
+      <button (click)="menu1.showMenu($event)" class="button">Show</button>
+      <app-host-child #menu1>
+        <div>Цей текст передано з батьківского компонента 1</div>
+      </app-host-child>
+    </div>
+
+    <div class="button-container">
+      <button (click)="menu2.showMenu($event)" class="button">Show</button>
+      <app-host-child #menu2>
+        <div>Цей текст передано з батьківского компонента 2</div>
+      </app-host-child>
+    </div>
+
+    <div class="button-container">
+      <button (click)="menu3.showMenu($event)" class="button">Show</button>
+      <app-host-child #menu3>
+        <div>Цей текст передано з батьківского компонента 3</div>
+      </app-host-child>
+    </div>
+  </div>
+</div>
