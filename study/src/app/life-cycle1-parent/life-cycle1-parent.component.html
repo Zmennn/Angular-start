@@ -1,1 +1,7 @@
-<p>life-cycle1-parent works!</p>
+<div class="container">
+  <h2>Компоненти життєвого циклу</h2>
+  <h3>constructor ngOnChanges ngOnInit</h3>
+  <h3>ngOnChanges ngDoCheck</h3>
+  <button (click)="data = data + 1">Змінити данні</button>
+  <app-life-cycle1-child [title]="data"></app-life-cycle1-child>
+</div>

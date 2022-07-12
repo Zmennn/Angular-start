@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Батьківський компонент</h2>
+  <p>передача примітива {{ data }}</p>
+  <p>передача массива {{ arrInPar }}</p>
+  <app-life-cycle2-child
+    [arrChild]="arrInPar"
+    [title]="data"
+  ></app-life-cycle2-child>
+</div>

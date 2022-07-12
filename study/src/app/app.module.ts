@@ -21,6 +21,8 @@ import { HostChildComponent } from './host-child/host-child.component';
 import { EmptyComponent } from './empty/empty.component';
 import { LifeCycle1ParentComponent } from './life-cycle1-parent/life-cycle1-parent.component';
 import { LifeCycle1ChildComponent } from './life-cycle1-child/life-cycle1-child.component';
+import { LifeCycle2ParentComponent } from './life-cycle2-parent/life-cycle2-parent.component';
+import { LifeCycle2ChildComponent } from './life-cycle2-child/life-cycle2-child.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { LifeCycle1ChildComponent } from './life-cycle1-child/life-cycle1-child.
     HostChildComponent,
     EmptyComponent,
     LifeCycle1ParentComponent,
-    LifeCycle1ChildComponent
+    LifeCycle1ChildComponent,
+    LifeCycle2ParentComponent,
+    LifeCycle2ChildComponent
   ],
   imports: [
     BrowserModule,
