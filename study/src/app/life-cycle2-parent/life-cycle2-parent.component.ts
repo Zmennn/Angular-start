@@ -1,10 +1,10 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-life-cycle2-parent',
   templateUrl: './life-cycle2-parent.component.html',
   styleUrls: ['./life-cycle2-parent.component.scss'],
-  changeDetection:ChangeDetectionStrategy.OnPush
+  changeDetection:ChangeDetectionStrategy.Default
 })
 export class LifeCycle2ParentComponent implements OnInit {
 
@@ -16,7 +16,7 @@ export class LifeCycle2ParentComponent implements OnInit {
   @Input()
   arrInPar?:number[];
 
-  constructor() { };
+  constructor(private cdr:ChangeDetectorRef ) { };
 
   ngOnChanges() {
     console.log('Це в parent ngOnChanges        ', this.arrInPar)
@@ -26,7 +26,8 @@ export class LifeCycle2ParentComponent implements OnInit {
   }
 
   ngDoCheck(): void {
-    console.log('Це в parent ngDoCheck        ', this.arrInPar)
+    console.log('Це в parent ngDoCheck        ', this.arrInPar);
+    // this.cdr.markForCheck()
   };
 
 }

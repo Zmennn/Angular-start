@@ -1,9 +1,10 @@
-import { Component, OnInit,OnChanges,DoCheck, Input } from '@angular/core';
+import { Component, OnInit,OnChanges,DoCheck, Input,ChangeDetectionStrategy,ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-life-cycle2-child',
   templateUrl: './life-cycle2-child.component.html',
-  styleUrls: ['./life-cycle2-child.component.scss']
+  styleUrls: ['./life-cycle2-child.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class LifeCycle2ChildComponent implements OnInit,OnChanges,DoCheck {
 
@@ -13,10 +14,11 @@ arrChild?:number [];
 @Input()
 title='startTitle'
 
-  constructor() { }
+  constructor(private cdr:ChangeDetectorRef) { }
 
  ngOnChanges() {
-    console.log('Це в child ngOnChanges        ', this.arrChild)
+   console.log('Це в child ngOnChanges        ', this.arrChild)
+   this.cdr.markForCheck()
   };
 
   ngOnInit(): void {
