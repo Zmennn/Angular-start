@@ -17,6 +17,9 @@
   [data]="data"
   [arrInPar]="arr"
 ></app-life-cycle2-parent>
+<app-life-cycle3-parent *ngIf="show">
+  <app-life-cycle3-child [title]="title"></app-life-cycle3-child>
+</app-life-cycle3-parent>
 
 <div class="button-container">
   <button class="button" (click)="onClickHidden(1)">Убрать нечетные</button>
@@ -27,4 +30,5 @@
   <button class="button" (click)="imutationArr()">
     Імуттабельно замінити масив
   </button>
+  <button class="button" (click)="show = !show">Toggle</button>
 </div>

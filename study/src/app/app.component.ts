@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   data = "стартовое апп";
+  show = true;
 
 arr:number[]=[1,2,3]
 
