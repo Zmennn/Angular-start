@@ -1,2 +1,9 @@
-<p>Примітив в дочерному {{ title }}</p>
-<p>Массив в дочерному {{ arrChild }}</p>
+<div class="container">
+  <p>Примітив в дочерному {{ title }}</p>
+  <div>
+    Maccив в дочерному, компонент має стратегію
+    changeDetection:ChangeDetectionStrategy.OnPush, зміни при мутаціях массива
+    відбуваються за рахунок this.cdr.markForCheck() в методі ngDoCheck()
+  </div>
+  <p *ngFor="let elem of arrChild">\ {{ elem }} \</p>
+</div>

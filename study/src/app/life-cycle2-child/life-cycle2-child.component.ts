@@ -17,15 +17,16 @@ title='startTitle'
   constructor(private cdr:ChangeDetectorRef) { }
 
  ngOnChanges() {
-   console.log('Це в child ngOnChanges        ', this.arrChild)
-   this.cdr.markForCheck()
+  //  console.log('Це в child ngOnChanges        ', this.arrChild)
+   
   };
 
   ngOnInit(): void {
   };
 
   ngDoCheck(): void {
-    console.log('Це в child ngDoCheck        ', this.arrChild)
+    // console.log('Це в child ngDoCheck        ', this.arrChild)
+    this.cdr.markForCheck()
   };
 
 }

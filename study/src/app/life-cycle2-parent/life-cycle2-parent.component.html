@@ -1,7 +1,8 @@
 <div class="container">
   <h2>Батьківський компонент</h2>
   <p>передача примітива {{ data }}</p>
-  <p>передача массива {{ arrInPar }}</p>
+  <div>Передача массива,базові налаштування життєвого цикла</div>
+  <p *ngFor="let elem of arrInPar">\ {{ elem }} /</p>
   <app-life-cycle2-child
     [arrChild]="arrInPar"
     [title]="data"

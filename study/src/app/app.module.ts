@@ -23,6 +23,8 @@ import { LifeCycle1ParentComponent } from './life-cycle1-parent/life-cycle1-pare
 import { LifeCycle1ChildComponent } from './life-cycle1-child/life-cycle1-child.component';
 import { LifeCycle2ParentComponent } from './life-cycle2-parent/life-cycle2-parent.component';
 import { LifeCycle2ChildComponent } from './life-cycle2-child/life-cycle2-child.component';
+import { LifeCycle3ParentComponent } from './life-cycle3-parent/life-cycle3-parent.component';
+import { LifeCycle3ChildComponent } from './life-cycle3-child/life-cycle3-child.component';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { LifeCycle2ChildComponent } from './life-cycle2-child/life-cycle2-child.
     LifeCycle1ParentComponent,
     LifeCycle1ChildComponent,
     LifeCycle2ParentComponent,
-    LifeCycle2ChildComponent
+    LifeCycle2ChildComponent,
+    LifeCycle3ParentComponent,
+    LifeCycle3ChildComponent
   ],
   imports: [
     BrowserModule,

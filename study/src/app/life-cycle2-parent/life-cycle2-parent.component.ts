@@ -19,15 +19,15 @@ export class LifeCycle2ParentComponent implements OnInit {
   constructor(private cdr:ChangeDetectorRef ) { };
 
   ngOnChanges() {
-    console.log('Це в parent ngOnChanges        ', this.arrInPar)
+    // console.log('Це в parent ngOnChanges        ', this.arrInPar)
   };
 
   ngOnInit(): void {
   }
 
   ngDoCheck(): void {
-    console.log('Це в parent ngDoCheck        ', this.arrInPar);
-    // this.cdr.markForCheck()
+    // console.log('Це в parent ngDoCheck        ', this.arrInPar);
+    
   };
 
 }
